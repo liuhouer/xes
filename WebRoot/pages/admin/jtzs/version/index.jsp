@@ -1,0 +1,139 @@
+<%@page import="com.xes.jtzs.model.*" %>
+
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib tagdir="/WEB-INF/tags/simpletable" prefix="simpletable"%>
+<%@ include file="/common/taglibs.jsp" %>
+<%@ page trimDirectiveWhitespaces="true" %>
+<up72:override name="head">
+  <title><%=Version.TABLE_ALIAS%> 维护</title>
+  <script src="${ctx}/scripts/rest.js" ></script>
+  <link href="${ctx}/scripts/simpletable/simpletable.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="${ctx}/scripts/simpletable/simpletable.js"></script> 
+  <script type="text/javascript" src="${ctx}/scripts/columnshow.js"></script>
+  <link href="${ctx}/scripts/grid/css/flexigrid.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="${ctx}/scripts/grid/flexigrid-source.js"></script> 
+  <script type="text/javascript" >
+		$(document).ready(function() {
+			// 分页需要依赖的初始化动作
+			window.simpleTable = new SimpleTable('admin_jtzs_version_page_form',${page.thisPageNumber},${page.pageSize},'${pageRequest.sortColumns}');
+		});
+	</script> 
+  <script type="text/javascript" src="<c:url value="/scripts/extend.div.1.0.js"/>"></script> 
+</up72:override>
+<up72:override name="content"> 
+  
+  <!--搜索-->
+  <div class="up72_search">
+    <form id="admin_jtzs_version_search_form" name="admin_jtzs_version_search_form" method="get">
+      <div class="search_con"> 
+
+        <div class="search_txt"><%=Version.ALIAS_TYPE%>：
+          <input type="text" id="type" name="type" class="input_text" value="${query.type}">
+        </div>
+
+        <div class="search_txt"><%=Version.ALIAS_VERSION%>：
+          <input type="text" id="version" name="version" class="input_text" value="${query.version}">
+        </div>
+
+        <div class="search_txt"><%=Version.ALIAS_SIZE%>：
+          <input type="text" id="size" name="size" class="input_text" value="${query.size}">
+        </div>
+
+        <div class="search_txt"><%=Version.ALIAS_APP_URL%>：
+          <input type="text" id="appUrl" name="appUrl" class="input_text" value="${query.appUrl}">
+        </div>
+
+        <div class="search_txt"><%=Version.ALIAS_UPDATE_INFO%>：
+          <input type="text" id="updateInfo" name="updateInfo" class="input_text" value="${query.updateInfo}">
+        </div>
+
+        <div class="search_txt"><%=Version.ALIAS_ADD_TIME%>：
+          <input type="text" id="addTime" name="addTime" class="input_text" value="${query.addTime}">
+        </div>
+
+        <div class="search_txt"><%=Version.ALIAS_UPDATE_TIME%>：
+          <input type="text" id="updateTime" name="updateTime" class="input_text" value="${query.updateTime}">
+        </div>
+        <div class="search_btn">
+          <div class="input_button">
+            <button name="btnU" type="submit" onclick="$(this).parents('form').submit();" class="button" value="查询"><span>查询</span></button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!--end搜索-->
+  
+  <form id="admin_jtzs_version_page_form" name="admin_jtzs_version_page_form" method="get">
+    <table id="admin_jtzs_version_table">
+      <thead>
+        <tr>
+          <th showColumn="checkbox" width="25"><input type="checkbox" id="checkall" onclick="setAllCheckboxState('items',this.checked);" /></th>
+          <th showColumn="index" width="20">序号</th>
+          <th showColumn="option" width="30"><label>操作</label></th>
+                    <th sortColumn="TYPE" showColumn="type" width="50"><%=Version.ALIAS_TYPE%></th>
+                    <th sortColumn="VERSION" showColumn="version" width="50"><%=Version.ALIAS_VERSION%></th>
+                    <th sortColumn="SIZE" showColumn="size" width="50"><%=Version.ALIAS_SIZE%></th>
+                    <th sortColumn="APP_URL" showColumn="appUrl" width="50"><%=Version.ALIAS_APP_URL%></th>
+                    <th sortColumn="UPDATE_INFO" showColumn="updateInfo" width="50"><%=Version.ALIAS_UPDATE_INFO%></th>
+                    <th sortColumn="ADD_TIME" showColumn="addTime" width="50"><%=Version.ALIAS_ADD_TIME%></th>
+                    <th sortColumn="UPDATE_TIME" showColumn="updateTime" width="50"><%=Version.ALIAS_UPDATE_TIME%></th>
+           </tr>
+      </thead>
+      <tbody>
+        <c:forEach items="${page.result}" var="item" varStatus="status">
+          <tr rel="${ctx}/pages/admin/jtzs/version/tab.jsp?id=${item.id}">
+            <td showColumn="checkbox"><input type="checkbox" id="items" name="items" value="${item.id}" class="sel" tags="null"></td>
+            <td showColumn="index">${page.thisPageFirstElementNumber + status.index}</td>
+            <td showColumn="option"><a href="javascript:;"  onclick="show('${ctx}/admin/jtzs/version/${item.id}/edit','<%=Version.TABLE_ALIAS%>',600)" class="sysiconBtnNoIcon">编辑</a>&nbsp;</td>
+                        <td showColumn="type"><c:out value='${item.type}'/>
+&nbsp; </td>
+                        <td showColumn="version"><c:out value='${item.version}'/>
+&nbsp; </td>
+                        <td showColumn="size"><c:out value='${item.size}'/>
+&nbsp; </td>
+                        <td showColumn="appUrl"><c:out value='${item.appUrl}'/>
+&nbsp; </td>
+                        <td showColumn="updateInfo"><c:out value='${item.updateInfo}'/>
+&nbsp; </td>
+                        <td showColumn="addTime"><fmt:formatDate value="${item.addTimeDate}" pattern="yyyy-MM-dd HH:mm"/>
+&nbsp; </td>
+                        <td showColumn="updateTime"><fmt:formatDate value="${item.updateTimeDate}" pattern="yyyy-MM-dd HH:mm"/>
+&nbsp; </td>
+             </tr>
+        </c:forEach>
+      </tbody>
+    </table>
+    <simpletable:pageToolbar page="${page}"></simpletable:pageToolbar>
+  </form>
+  <script type="text/javascript">
+	// 列选择显示处理
+	$.showcolumn(${showColumn});
+	// 排序处理
+	$.sortcolumn({
+		form : "#admin_jtzs_version_search_form",
+		data : "pageNumber=${page.thisPageNumber}&pageSize=${page.pageSize}",
+		columns : $("#admin_jtzs_version_table th[sortColumn]"),
+		sortColumns : "${pageRequest.sortColumns}"
+	});
+	
+	$("#admin_jtzs_version_table").rowAction({	
+		"url" : "/pages/admin/jtzs/version/tab.jsp",
+		"except" : ["checkbox","index","option"],
+		"pop" : true,
+		"poptitle" : "<%=Version.TABLE_ALIAS%>标签",
+		"popw" : 600
+	});
+	// 表格列表处理
+	$('#admin_jtzs_version_table').flexigrid({
+		height: 'auto',
+		striped : true,
+		buttons : [
+			{name: "添加", bclass: "addorder", onpress : function(){show("${ctx}/admin/jtzs/version/new","<%=Version.TABLE_ALIAS%>添加",600)}},
+			{name: '删除', bclass: 'delete', onpress : function(){doRestEdit({confirmMsg:'确认删除选中的记录吗？',url:'${ctx}/admin/jtzs/version/',batchBox:'items',boxCon:'#admin_jtzs_version_page_form',form:'#admin_jtzs_version_page_form',method:'delete'})}}
+		]
+	});
+</script> 
+</up72:override>
+<%@ include file="base.jsp" %>

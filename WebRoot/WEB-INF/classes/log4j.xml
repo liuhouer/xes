@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration PUBLIC "-//LOGGER" "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <!--控制台输出，上线关闭 -->
+    <appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                   value="[%p] [%d] [%c] - [%m]%n" />
+        </layout>
+        <!--过滤器设置输出的级别-->
+        <!--<filter class="org.apache.log4j.varia.LevelRangeFilter">-->
+            <!--<param name="levelMin" value="debug" />-->
+            <!--<param name="levelMax" value="ERROR" />-->
+            <!--<param name="AcceptOnMatch" value="true" />-->
+        <!--</filter>-->
+    </appender>
+
+   <!--系统主日志 -->
+    <appender name="file" class="org.apache.log4j.RollingFileAppender">
+        <param name="file" value="./log/main.log" /><!-- 设置日志输出文件名 -->
+        <!-- 设置是否在重新启动服务时，在原有日志的基础添加新日志 -->
+        <param name="maxFileSize" value="2MB" />
+        <param name="Append" value="true" />
+        <param name="MaxBackupIndex" value="10" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%p] [%d] [%c] - [%m]%n" />
+        </layout>
+    </appender>
+
+    <!--业务入库日志 -->
+    <appender name="db" class="org.apache.log4j.jdbc.JDBCAppender">
+        <param name="URL" value="jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=utf-8"/>
+        <param name="driver" value="com.mysql.jdbc.Driver"/>
+        <param name="user" value="root"/>
+        <param name="password" value=""/>
+        <!--入库内容可自行定制，多字段需扩展Filter -->
+        <param name="sql" value="INSERT INTO log4j_log (PRIORITY,LOGDATE,CLASS,METHOD,MSG) VALUES ('%p','%d{yyyy-MM-dd HH:mm:ss}','%C','%M','%m')"/>
+        <!--过滤器只输出Business自定义级别日志 -->
+        <filter class="com.up72.log4j.CustomFilter">
+            <param name="levelToMatch" value="business" />
+            <param name="AcceptOnMatch" value="true" />
+        </filter>
+        <filter class="org.apache.log4j.varia.DenyAllFilter" />
+    </appender>
+
+
+    <logger name="org.hibernate.SQL">
+        <level value="DEBUG"/>
+        <!--<appender-ref ref="stdout"/>-->
+    </logger>
+
+    <logger name="org.hibernate">
+        <level value="error"/>
+    </logger>
+
+    <logger name="org.springframework">
+        <level value="error"/>
+    </logger>
+
+    <!-- 根logger的设置-->
+    <root>
+        <priority value ="debug"/>
+        <appender-ref ref="stdout"/>
+        <!--<appender-ref ref="file"/>-->
+        <!--<appender-ref ref="db"/>-->
+    </root>
+
+</log4j:configuration>

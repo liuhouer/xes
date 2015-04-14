@@ -1,0 +1,37 @@
+/* ================================================================ 
+This copyright notice must be kept untouched in the stylesheet at 
+all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.stunicholls.com/menu/pro_drop_1.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+.nav{ padding:0; margin:0; list-style:none; height:32px; position:relative; z-index:500; }
+.nav li.nav_top{ display:block; float:left; }
+.nav li a.top_link{ display:block; float:left; height:32px; line-height:32px; color:#eee; text-decoration:none; font-size:12px; padding:0 5px; cursor:pointer; }
+.nav li a.top_link span{ float:left; display:block; padding:0 5px; height:32px; }
+.nav li a.top_link span.down{ float:left; display:block; padding:0 5px; height:32px; /*background:url('images/blanka.gif') no-repeat right 15px;*/ }
+.nav li a.top_link:hover{ background:#71a4dc; background:-webkit-gradient(linear,left top,left bottom,from(#71a4dc),to(#2769b7)); background:-moz-linear-gradient(top,#71a4dc,#2769b7); background:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#71a4dc',endColorstr='#2769b7'); color:#fff; }
+.nav li a.top_link:hover span{ }
+.nav li a.top_link:hover span.down{ /*background:url('images/blank_overa.gif') no-repeat right 15px;*/ }
+.nav li:hover > a.top_link{ background:#71a4dc; background:-webkit-gradient(linear,left top,left bottom,from(#71a4dc),to(#2769b7)); background:-moz-linear-gradient(top,#71a4dc,#2769b7); background:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#71a4dc',endColorstr='#2769b7'); color:#fff; }
+.nav li.on_tlink > a.top_link{ background:#71a4dc; background:-webkit-gradient(linear,left top,left bottom,from(#71a4dc),to(#2769b7)); background:-moz-linear-gradient(top,#71a4dc,#2769b7); background:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#71a4dc',endColorstr='#2769b7'); color:#fff; }
+.nav li:hover > a.top_link span{ }
+.nav li:hover > a.top_link span.down{ /*background:url('images/blank_overa.gif') no-repeat right 15px;*/ }
+/* Default list styling */
+
+.nav li:hover{ position:relative; z-index:200; }
+/* keep the 'next' level invisible by placing it off screen. */
+.nav ul, .nav li:hover ul ul, .nav li:hover ul li:hover ul ul, .nav li:hover ul li:hover ul li:hover ul ul, .nav li:hover ul li:hover ul li:hover ul li:hover ul ul{ position:absolute; left:-9999px; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none; box-shadow:1px 3px 5px rgba(0,0,0,0.3); border-radius:0 0 5px 5px; }
+.nav li:hover ul.sub{ left:0; top:32px; background:rgba(255,255,255,0.95); background:#fff\9; padding:8px 0; white-space:nowrap; width:170px; height:auto; z-index:300; border-radius:0 0 5px 5px; }
+.nav li:hover ul.sub li{ display:block; height:26px; position:relative; float:left; width:100%; font-weight:normal; }
+.nav li:hover ul.sub li a{ display:block; font-size:12px; height:26px; line-height:26px; width:100%; text-indent:15px; color:#333; text-decoration:none; }
+.nav li ul.sub li a.fly{ background:#fff url('images/arrow.gif') 95% 7px no-repeat; }
+.nav li:hover ul.sub li a:hover{ background:#5991d1; background:-webkit-gradient(linear,left top,left bottom,from(#89b7eb),to(#5991d1)); background:-moz-linear-gradient(top,#89b7eb,#5991d1); background:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#89b7eb',endColorstr='#5991d1'); color:#fff; }
+.nav li:hover ul.sub li a.fly:hover{ background:#5991d1 url('images/arrow_over.gif') 95% 7px no-repeat; color:#fff; }
+.nav li:hover ul li:hover > a.fly{ background:#5991d1 url('images/arrow_over.gif') 95% 7px no-repeat; color:#fff; }
+.nav li:hover ul li:hover ul, .nav li:hover ul li:hover ul li:hover ul, .nav li:hover ul li:hover ul li:hover ul li:hover ul, .nav li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul{ left:170px; top:-4px; background:#fff; padding:8px 0; white-space:nowrap; z-index:400; width:170px; height:auto; }
+

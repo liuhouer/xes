@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<taglib>
+	<tlibversion>1.2</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>perm</shortname>
+	<uri>TagPerm</uri>
+	<tag>
+		<name>tag</name>
+		<tagclass>com.up72.auth.taglib.TagPermTaglib</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<attribute>
+			<name>selector</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>attach</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<name>replace</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>jsPermPath</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

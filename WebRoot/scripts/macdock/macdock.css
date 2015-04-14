@@ -1,0 +1,42 @@
+/* dock - bottom 
+#macdock { width:100%; position:relative; }
+.dock-container { position:absolute; height:45px; }
+a.dock-item { display:block; width:50px; color:#000; bottom:0px; position:absolute; text-align:center; text-decoration:none; }
+.dock-item span { display:none; }
+.dock-item img { border:none; width:90%; }
+*/
+/*.dock { position:relative; height:50px; text-align:center; z-index:9999; }
+.dock-container { position:absolute; height:50px; padding-left:20px; }
+a.dock-item { display:block; width:40px; color:#000; position:absolute; top:0px; text-align:center; text-decoration:none; font:bold 12px Arial, Helvetica, sans-serif; }
+.dock-item img { border:none; margin:5px 10px 0px; width:100%; }
+.dock-item span { display:none; padding-left:20px; }
+*/
+/* dock2 - bottom 
+#dock2 { width:100%; bottom:0px; position:absolute; left:0px; }
+.dock-container2 { position:absolute; height:50px; padding-left:20px; }
+a.dock-item2 { display:block; font:bold 12px Arial, Helvetica, sans-serif; width:40px; color:#000; bottom:0px; position:absolute; text-align:center; text-decoration:none; }
+.dock-item2 span { display:none; padding:5px; background:rgba(0,0,0,0.8); *background:#000; *opcity:0.8; border-radius:20px; }
+.dock-item2 img { border:none; margin:5px 0px 0; width:100%; }
+*/
+
+/*底部导航*/
+#footer_product { position:fixed; _position:absolute; bottom:0px; _bottom:0px; _margin-top:expression(this.style.pixelHeight+document.documentElement.scrollTop); }
+
+
+/* Dock */
+#dock { display:block; margin:0 auto; left:0; bottom:0px; width:100%; text-align:center; position:absolute; }
+#dock ul { margin:0px -60px; padding:0px; list-style:none; height:48px; text-align:center; white-space:nowrap; display:inline-block; }
+/*
+#dock ul:before,  #dock ul:after { content:""; color:transparent; display:block; width:0px; padding-top:60px; margin-top:-60px; vertical-align:bottom; }
+#dock ul:before { padding-left:60px; margin-left:-60px; background:url("img/dock-left.png") bottom left repeat-x; }
+#dock ul:after { padding-right:60px; margin-right:-60px; background:url("img/dock-right.png") bottom right repeat-x; }
+*/
+/* Dock Icons */
+#dock li { display:block; float:left; margin:0px; padding:0px; position:relative; overflow:visible; }
+#dock li.seperator { width:20px; height:48px; position:relative; vertical-align:bottom; }
+#dock li a { height:48px; width:48px; display:block; text-align:center; position:relative; vertical-align:bottom; text-decoration:none; color:black; white-space:normal; letter-spacing:normal; line-height:1.3em; text-align:center; overflow:visible; }
+body.no_js #dock li a:hover { width:100px !important; }
+#dock li a span { position:relative; line-height:1.3em; display:none; text-align:center; padding:4px 15px; color:#fff; background-color:#000; opacity:0.8; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; margin:0px auto; top:-70px; border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px; }
+#dock li a:hover span { display:inline-block; }
+#dock li a:hover span:after { display:block; height:9px; color:transparent; position:absolute; content:""; text-align:center; margin:0px; padding:0px; width:100%; margin-left:-16px; }
+#dock li a img { height:auto; width:100%; position:absolute; left:0px; bottom:0px; text-align:center; border:0px none; margin:0px; box-reflect:below 1px gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(rgba(255,255,255,0.1))); -webkit-box-reflect:below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(rgba(255,255,255,0.1))); -moz-box-reflect:below 1px -moz-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(rgba(255,255,255,0.1))); }

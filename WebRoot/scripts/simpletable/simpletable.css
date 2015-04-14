@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+.gridTable{ margin:0; padding:0; font-size:12px; }
+/** grid body */
+.gridBody{ border-right:1px solid silver; border-top:1px solid silver; }
+.gridBody th{ border-left:1px solid silver; border-bottom:1px solid silver; vertical-align:middle; background-color:#e5e5e5; padding:0 10px 0 0; }
+.gridBody td{ border-left:1px solid silver; border-bottom:1px solid silver; color:black; }
+/** grid header sort */
+.gridBody th.sort { }
+.gridBody th.sort.desc { background:#c5c5c5 url('images/sort_desc.gif') center right no-repeat }
+.gridBody th.sort.asc { background:#c5c5c5 url('images/sort_asc.gif') center right no-repeat }
+/** mouse hove over sort header */
+.gridBody .tableHeaderSortHover{ background-color:#f5f5f5 !important; text-decoration:underline; cursor:pointer; }
+/** gridBody row colors */
+.gridBody .odd { background-color:#fff; }
+.gridBody .even { background-color:#f8f8f8; }
+.gridBody .highlight { background-color:#fdeccf !important; }
+/** grid toolbar */
+.gridToolbar .leftControls { }
+.gridToolbar .paginationControls .buttonLabel {margin:0 0 0 12px;width:100px;_padding:0 0 0 12px;white-space:nowrap;}
+.gridToolbar .box div{ display:inline; float:left; }
+.gridToolbar .box .paginationControls { float:right; }
+.gridToolbar td{ background-color:#e4f1ff; padding:5px 8px; }
+.gridBody .odd a, .even a{ font-size:12px; color:005C9C !important; }
+/* -grid toolbar - do */
+.gridToolbar .box .paginationControls a, .gridToolbar .box .paginationControls span{ display:inline-block; border:solid 1px #ccc; vertical-align:middle; padding:3px 6px; border-radius:2px; background:#e8e8e8; text-align:center; min-width:12px; width:12px\9; height:14px; line-height:14px; }
+.gridToolbar .box .paginationControls a img, .gridToolbar .box .paginationControls span img{ vertical-align:top; padding-top:1px; }
+.gridToolbar .box .paginationControls a{ background-color:#f9f9f9; background:-webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#dddddd)); background:-moz-linear-gradient(center top, #f8f8f8,#dddddd); background:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8',endColorstr='#dddddd'); }
+.gridToolbar .box .paginationControls a:hover{ background:#fff; }
+.gridToolbar .box .paginationControls span{ color:#999; }
+.gridToolbar .box .paginationControls span.pages_sel{ box-shadow:0 0 5px 1px #515151 inset; background:#666; border:solid 1px #666; color:#fff; }

@@ -1,0 +1,103 @@
+/* 
+ * My97 DatePicker 4.1
+ * 皮肤名称:Blue
+ * 皮肤作者:do
+ */
+ 
+/*
+.WdateIframe{ box-shadow:0 1px 2px rgba(0,0,0,0.5); }
+*/
+/* 日期选择容器 DIV */
+.WdateDiv{ width:200px; background-color:#e4f1ff; border:solid 1px #9cb8cc; border-radius:3px; }
+.WdateDiv *{ font-size:9pt; font-family:'verdana','sans-serif','Microsoft YaHei','\5B8B\4F53'; }
+/****************************
+ * 导航图标
+ ***************************/
+.WdateDiv .NavImg{ cursor:pointer; width:16px; height:16px; margin-top:1px; }
+.WdateDiv .NavImgll{ background:url('img.gif') no-repeat; }
+.WdateDiv .NavImgl{ background:url('img.gif') no-repeat -16px 0px; }
+.WdateDiv .NavImgr{ background:url('img.gif') no-repeat -32px 0px; }
+.WdateDiv .NavImgrr{ background:url('img.gif') no-repeat -48px 0px; }
+/****************************
+ * 年份月份相关
+ ***************************/
+/* 年份月份栏 DIV */
+.WdateDiv #dpTitle{ height:20px; padding:5px; padding:5px 3px\9; background-color:#b7d2ed; background:-webkit-gradient(linear,left top,left bottom,from(#ddebfa),to(#b7d2ed)); background:-moz-linear-gradient(top,#ddebfa,#b7d2ed); background:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ddebfa',endColorstr='#b7d2ed'); border-bottom:solid 1px #9cb8cc; }
+/* 年份月份输入框 INPUT */
+.WdateDiv .yminput,.WdateDiv .yminputfocus{ margin-right:3px; text-align:center; padding-bottom:1px; height:20px; width:60px; cursor:pointer; background-color:#e7f0f9; background:-webkit-gradient(linear,left top,left bottom,from(#f9fdfe),to(#e7f0f9)); background:-moz-linear-gradient(top,#f9fdfe,#e7f0f9); background:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fdfe',endColorstr='#e7f0f9'); border:solid 1px #9dabb6; border-radius:3px; }
+/* 年份月份输入框获得焦点时的样式 INPUT */
+.WdateDiv .yminputfocus{ font-weight:bold; color:blue; }
+/* 菜单选择框 DIV */
+.WdateDiv .menuSel{ position:absolute; background-color:#fff; border:solid 1px #9dabb6; padding:3px; display:none; }
+/* 菜单的样式 TD */
+.WdateDiv .menu{ cursor:pointer; background-color:#fff; text-indent:3px; }
+/* 菜单的mouseover样式 TD */
+.WdateDiv .menuOn{ cursor:pointer; background-color:#ffdfab; text-indent:3px; }
+/* 菜单无效时的样式 TD */
+.WdateDiv .invalidMenu{ color:#aaa; }
+/* 年选择框的偏移 DIV */
+.WdateDiv .YMenu{ margin-top:19px; }
+/* 月选择框的偏移 DIV */
+.WdateDiv .MMenu{ margin-top:19px; *width:65px; }
+/* 时选择框的位置 DIV */
+.WdateDiv .hhMenu{ margin-top:-90px; margin-left:26px; }
+/* 分选择框的位置 DIV */
+.WdateDiv .mmMenu{ margin-top:-46px; margin-left:26px; }
+/* 秒选择框的位置 DIV */
+.WdateDiv .ssMenu{ margin-top:-24px; margin-left:26px; }
+/****************************
+ * 周相关
+ ***************************/
+ .WdateDiv .Wweek{ text-align:center; background:#DAF3F5; border-right:#BDEBEE 1px solid; }
+/****************************
+ * 星期,日期相关
+ ***************************/
+ /* 星期栏 TR */
+.WdateDiv .MTitle{ background-color:#eee; background:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#eee)); background:-moz-linear-gradient(top,#fff,#eee); background:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff',endColorstr='#eee'); }
+.WdateDiv .MTitle td{ border-bottom:solid 1px #d0d0d0; height:25px; padding-bottom:2px; }
+/* 日期栏表格 TABLE */
+.MBody *{ font-size:8pt; }
+.WdateDiv .WdayTable{ line-height:20px; background:#fff; }
+/* 日期格的样式 TD */
+.WdateDiv .Wday{ cursor:pointer; }
+/* 日期格的mouseover样式 TD */
+.WdateDiv .WdayOn{ cursor:pointer; background-color:#ffdfab; }
+/* 周末日期格的样式 TD */
+.WdateDiv .Wwday{ cursor:pointer; color:#ff2f2f; }
+/* 周末日期格的mouseover样式 TD */
+.WdateDiv .WwdayOn{ cursor:pointer; color:#000; background-color:#ffdfab; }
+.WdateDiv .Wtoday{ cursor:pointer; background-color:#a9e79e; }
+.WdateDiv .Wselday{ background-color:#ff7f3d; background:-webkit-gradient(linear,left top,left bottom,from(#ffbd79),to(#ff7f3d)); background:-moz-linear-gradient(top,#ffbd79,#ff7f3d); background:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbd79',endColorstr='#ff7f3d'); color:#fff; }
+/* 其他月份的日期 */
+.WdateDiv .WotherDay{ cursor:pointer; color:#6A6AFF; }
+/* 其他月份的日期mouseover样式 */
+.WdateDiv .WotherDayOn{ cursor:pointer; background-color:#ffdfab; }
+/* 无效日期的样式,即在日期范围以外日期格的样式,不能选择的日期 */
+.WdateDiv .WinvalidDay{ color:#aaa; }
+/****************************
+ * 时间相关
+ ***************************/
+/* 时间栏 DIV */
+.WdateDiv #dpTime{ padding-top:3px; padding-left:6px; }
+/* 时间文字 SPAN */
+.WdateDiv #dpTime #dpTimeStr{ margin-left:1px; }
+/* 时间输入框 INPUT */
+.WdateDiv #dpTime input{ height:20px; width:18px; text-align:center; border:#ccc 1px solid; }
+/* 时间 时 INPUT */
+.WdateDiv #dpTime .tB{ border-right:0px; }
+/* 时间 分和间隔符 ':' INPUT */
+.WdateDiv #dpTime .tE{ border-left:0; border-right:0; }
+/* 时间 秒 INPUT */
+.WdateDiv #dpTime .tm{ width:7px; border-left:0; border-right:0; }
+/* 时间右边的向上按钮 BUTTON */
+.WdateDiv #dpTime #dpTimeUp{ height:10px; width:13px; border:0px; background:url('img.gif') no-repeat -32px -16px; }
+/* 时间右边的向下按钮 BUTTON */
+.WdateDiv #dpTime #dpTimeDown{ height:10px; width:13px; border:0px; background:url('img.gif') no-repeat -48px -16px; }
+/****************************
+ * 其他
+ ***************************/
+.WdateDiv #dpQS{ float:left; margin-left:4px; margin-top:3px; background:url('/styles/system/icons/date_go.png') center no-repeat; width:20px; height:20px; cursor:pointer; }
+.WdateDiv #dpControl{ text-align:right; padding:3px; }
+.WdateDiv .dpButton{ width:45px; color:#fff; background-color:#3e85cc; background:-webkit-gradient(linear,left top,left bottom,from(#62a5ea),to(#3e85cc)); background:-moz-linear-gradient(top,#62a5ea,#3e85cc); background:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#62a5ea',endColorstr='#3e85cc'); border:1px solid #2475c6; border-radius:3px; padding-bottom:2px; height:20px; }
+.WdateDiv .dpButton:hover{ background-color:#1b6fc5; background:-webkit-gradient(linear,left top,left bottom,from(#4b90d7),to(#1b6fc5)); background:-moz-linear-gradient(top,#4b90d7,#1b6fc5); background:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4b90d7',endColorstr='#1b6fc5'); border:1px solid #1259a2; }
+.WdateDiv .dpButton:active { box-shadow:0 1px 2px rgba(0, 0, 0, 0.3) inset; }

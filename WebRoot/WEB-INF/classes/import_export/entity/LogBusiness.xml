@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config id="SysLogBusiness">
+	<column id="authUser.userName" name="操作人" />
+	<column id="time" name="操作时间">
+		<dateFormat>yyyy-MM-dd HH:mm:ss</dateFormat>
+	</column>
+	<column id="type" name="操作类型" />
+	<column id="result" name="操作结果描述" />
+	<column id="ip" name="操作IP" />
+	<column id="function" name="操作模块" />
+	<column id="description" name="操作说明" />
+</config>

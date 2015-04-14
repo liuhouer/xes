@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+/*错误提示小层*/
+.erorr-tips-layout{ height:48px; overflow:hidden; position:absolute; }
+.erorr-tips{ height:42px; position:relative; overflow:hidden; padding:0 5px 3px; }	
+.erorr-tips	.erorr-tips-trl{ width:14px; margin-left:50px; clear:both; height:7px; background:url('images/erorr_layt_sj.gif') 0 0 no-repeat; overflow:hidden; position:relative; z-index:2; }
+
+.erorr-tips .erorr-tips-main, .erorr-tips .erorr-tips-main .erorr-tips-l, .erorr-tips .erorr-tips-main .erorr-tips-c, .erorr-tips .erorr-tips-main .erorr-tips-r{ height:36px; overflow:hidden; }
+/**/
+.erorr-tips .erorr-tips-main{ position:relative; margin-top:-1px; box-shadow:0 0 2px #ccc; }
+.erorr-tips .erorr-tips-main .erorr-tips-l{ width:5px; background:url('images/erorr_layt_l.gif') left top no-repeat; position:absolute; left:0px; top:0px; }
+.erorr-tips .erorr-tips-main .erorr-tips-c{ padding:0 15px; background:url('images/erorr_layt_c.gif') left top repeat-x; margin-left:5px; }
+.erorr-tips .erorr-tips-main .erorr-tips-c h4{ height:28px; line-height:28px; padding:4px 0 4px 30px; background:url('images/erorr_gt.gif') left 7px no-repeat; color:#dc640f; font-size:14px; font-weight:normal; }
+.erorr-tips .erorr-tips-main .erorr-tips-c label{ background:none; border:none; }
+.erorr-tips .erorr-tips-main .erorr-tips-r{ width:5px; background:url('images/erorr_layt_r.gif') right top no-repeat; position:absolute; right:0px; top:0px; }
+
+/*提示关闭按钮*/
+.tips-closed{ width:20px; height:20px; display:block; overflow:hidden; background:url('images/erorr_closed.gif') center center no-repeat;  position:absolute; top:1px; right:0px; z-index:6; border-radius:12px; box-shadow:0 0 2px #ccc; }
+.tips-closed:hover{ background:url('images/erorr_closed_hover.gif') center center no-repeat; }
+
+/*用户头像提示*/
+.tips-layout-userp{ width:88px; height:85px; overflow:hidden; position:absolute; }
+.tips-userphoto-bg{ overflow:hidden; width:88px; height:80px; padding-top:5px; position:relative; }
+.tips-userphoto{ background:url('images/layout_userphoto.png') 0 0 no-repeat; width:88px; height:80px; padding-top:6px }
+.tips-user-photo{ width:65px; height:65px; margin-left:10px; overflow:hidden; }
+.tips-user-photo a{ width:65px; height:65px; display:block; cursor:pointer; }
+.tips-user-photo a img{ width:65px; height:65px; }
+
+/*_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod="image", src="/images/closed_green.png"); _background:none;*/

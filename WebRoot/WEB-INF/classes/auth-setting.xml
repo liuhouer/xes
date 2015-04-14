@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<auth>
+	<products>
+		<product name="发布" package="com.up72.cms.controller" />
+		<product name="模型" package="com.up72.cm.controller" />
+		<product name="权限" package="com.up72.auth.controller" />
+	</products>
+</auth>

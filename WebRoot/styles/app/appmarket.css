@@ -1,0 +1,14 @@
+@charset "utf-8";
+a{ -moz-outline-style: none; }
+a:active{ -moz-outline-style: none; }
+a:focus{ -moz-outline-style:none; }
+img{ border:none; }
+
+.AppMarket_myapp_container{ padding-bottom:30px; padding-left:30px; margin:0 auto; overflow:hidden; width:100%; font-size:12px; line-height:16px; }
+.AppMarket_myapp_container a{ color:#333; text-decoration:none; cursor:pointer; display:block; width:100%; overflow:hidden; text-align:center }
+.AppMarket_myapp_container a:hover{ color:#ff0000; text-decoration:underline; }
+	/**/
+	.AppMarket_myapp_app_item{ float:left; display:block; width:100px; height:114px; margin-right:30px; margin-top:30px; cursor:pointer; overflow:hidden; }
+		.AppMarket_myapp_icon_container{ display:block; background:transparent url(images/iconbg_1.gif) no-repeat scroll 0 0px; width:76px; height:76px; margin:0 auto; }
+			.AppMarket_myapp_icon { display:table; _display:block; margin:6px auto 0; height:64px; width:64px; overflow:hidden; }
+		.AppMarket_myapp_title{ display:block; padding-top:8px; text-align:center; overflow:hidden; }

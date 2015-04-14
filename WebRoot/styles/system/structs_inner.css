@@ -1,0 +1,68 @@
+﻿@charset "utf-8";
+
+/*内层结构*/
+
+/*角色选择*/
+.up72_tnav .up72_menu_role{ display:inline-block; height:20px; vertical-align:middle; position:relative; }
+.up72_tnav .up72_menu_role .up72_role_text{ display:inline-block; vertical-align:top; height:16px; line-height:16px; padding:2px 0 0 8px; }
+.up72_tnav .up72_menu_role .role_current, .up72_tnav .up72_menu_role .role_current_open{ height:16px; line-height:16px; padding:2px 22px 0 0px; display:inline-block; cursor:pointer; }
+.up72_tnav .up72_menu_role .role_options{ position:absolute; width:100%; left:0px; top:21px; }
+.up72_tnav .up72_menu_role .role_options li{ float:left; display:inline; width:100%; position:relative; zoom:1; }
+.up72_tnav .up72_menu_role .role_options li a{ display:block; width:100%; overflow:hidden; text-overflow:ellipsis; }
+.up72_tnav .up72_menu_role .role_options li a:hover{ }
+
+/*search 列表查询*/
+.up72_search{ line-height:24px; padding:1px 8px 3px; *padding:3px 8px 0; *white-space:nowrap; overflow:hidden; clear:both; }
+.up72_search .search_con{ width:100%; }
+.up72_search .search_txt{ float:left; height:24px; overflow:hidden; text-align:right; padding:3px 5px; }
+.up72_search .search_txt input{ height:16px; line-height:16px; padding:2px; vertical-align:middle; }
+.up72_search .search_txt select{width: 120px; height:22px; line-height:22px; vertical-align:middle; }
+.up72_search .search_txt input.input_txt{ width:120px; }
+.up72_search .search_txt input.calendar{ width:95px; }
+.up72_search .search_txt input.input_other{ width:50px; }
+.up72_search .search_txt input label{ display:inline-block; width:85px; }
+.up72_search .search_txt input.input_checkbox{ margin-right:3px !important; *margin-right:0px; margin-top:4px; }
+.up72_search .search_txt input.input_radio{ margin-right:3px !important; *margin-right:0px; margin-top:4px; }
+
+/*search_btn*/
+.up72_search .search_btn{ float:left; overflow:hidden; padding-top:4px !important; padding:0px 5px; }
+.up72_search .search_btn .input_button{ float:left; overflow:hidden; padding-left:1px; margin-left:-1px; cursor:pointer; }
+.up72_search .search_btn .input_button button span{ display:inline-block; }
+.up72_search .search_btn .input_button .input_button_text{ margin-left:1px; height:26px; padding-bottom:4px !important; padding-bottom:0px; cursor:pointer; *line-height:28px; width:80px; }
+	
+	
+/*操作按钮*/
+
+/*编辑区域表格框架*/
+.up72_edit, .up72_show { padding:0px; width:100%; overflow:hidden; line-height:20px; }
+.up72_edit table.edit_table, .up72_show table.show_table{ table-layout:fixed; border-spacing:1px; }
+.up72_edit table.edit_table th, .up72_show table.show_table th{ vertical-align:top; width:120px; font-weight:normal; text-align:right; padding:5px; }
+.up72_edit table.edit_table td, .up72_show table.show_table td{ vertical-align:top; padding:4px; line-height:23px; _line-height:27px; }
+.up72_edit table.edit_table td input.input_txt{ width:70%; margin-right:5px; float:left; }
+.up72_edit table.edit_table td label.error{ display:block; clear:both; }
+.up72_edit table.edit_table td textarea.input_txt{ width:70%; margin-right:5px; float:left; }
+.up72_edit table.edit_table td span.edit_comment{ display:block; clear:both; color:#999; }
+.up72_edit table.edit_table td input.calendar{ width:120px; }
+
+/*提交按钮*/
+.up72_submit, .up72_showEdit, .dialog-button{ padding:5px; text-align:right; }
+.up72_submit .btn, .up72_showEdit .btn{ margin-left:1px; margin-right:1px; }
+.up72_submit .btn input, .up72_showEdit .btn input{ cursor:pointer; padding:2px 5px; text-align:center; line-height:16px; }
+.up72_submit .btn_sub, .up72_showEdit .btn_sub{}/*提交*/
+.up72_submit .btn_cel, .up72_showEdit .btn_cel{}/*取消*/
+
+
+/*列表内容选项卡*/
+.up72_tabs{ white-space:nowrap; width:100%; overflow:hidden; }
+.up72_tabs .tabs_con{ width:96%; padding:5px 3% 0 1%; height:26px; }
+.up72_tabs .tabs_con span{ cursor:pointer; padding-right:3px; display:block; float:left; height:27px; text-align:center; }
+.up72_tabs .tabs_con span a{ display:block; line-height:20px; padding:3px 12px; _border-bottom:0px; text-decoration:none; }
+.up72_tabs .tabs_con span.uncur a{ padding:2px 12px 3px; }
+
+
+/*进度流程条*/
+.up72_prsbar{ white-space:nowrap; overflow:hidden; }
+.up72_prsbar .up72_prsbar_con{ width:100%; }
+.up72_prsbar ul{ }
+.up72_prsbar li{ float:left; overflow:hidden; }
+.up72_prsbar li span{ display:block; text-decoration:none; }

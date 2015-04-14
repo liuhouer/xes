@@ -1,0 +1,62 @@
+﻿@charset "utf-8";
+
+/*外层结构*/
+.up72_mart{ margin-top:10px; }
+.up72_marl{ margin-left:10px; }
+.up72_marr{ margin-right:10px; }
+
+/*Frame [主框架]*/
+.up72_dowrap { table-layout:fixed; overflow:hidden; width:100%; margin:0 auto; }
+
+/*top [头部内容]*/
+.up72_dotop{ width:100%; margin:0 auto; }
+	.up72_dotop .up72_top{ height:100%; position:relative; z-index:1; }
+		.up72_dotop .up72_top .up72_tnav{ line-height:33px; white-space:nowrap; position:relative; z-index: 99; }
+		
+		.up72_navl{ position:relative; z-index:110; }
+		
+		.up72_dotop .up72_top .up72_tnav .up72_ext{ float:right; /*padding-top:10px;*/ }
+		/*logo [标志]*/
+		.up72_dotop .up72_top .logo{ position:absolute; left:100px; top:50px; }
+		.up72_dotop .up72_top .up72_skins{ position:absolute; right:10px; top:75px }
+
+/*main [主体内容]*/
+.up72_domain{ height:98%; width:98%; padding:1%; margin:0 auto; }
+
+	.up72_mtable{ width:100%; height:100%; table-layout:fixed; }
+	.up72_mtable .up72_mleft{ vertical-align:top; }
+	.up72_mtable .up72_mright{ width:auto; vertical-align:top; }
+	
+	/*up72_Mleft [左内容]*/
+	.up72_domain .up72_domleft{ height:100% }
+	.up72_domain .up72_domright{ overflow:hidden; }
+	
+	/*up72_sidebar [左导航]*/
+	.up72_sidebar{ height:100%; }
+		.up72_sidebar a{ text-decoration:none; outline:none; }
+		/*up72_core [收缩]*/
+		.up72_sidebar .up72_core{ height:45px; margin-top:-1px; position:relative; }
+		.up72_sidebar .up72_core a{ display:block; width:86px; height:32px; line-height:32px; *line-height:36px; text-decoration:none; position:absolute; text-align:right; padding-right:5px; overflow:hidden; }		
+	
+		/*up72_cnav [导航]*/
+		.up72_sidebar .up72_cnav .up72_folders li{ height:36px; line-height:36px; text-align:left; white-space:nowrap; cursor:pointer; position:relative; margin-top:-1px; }
+		.up72_sidebar .up72_cnav .up72_folders li span{ width:16px; display:inline-block; vertical-align:text-bottom; overflow:hidden; margin:0 1px 0 0; }
+		.up72_sidebar .up72_cnav a{ width:108px; height:36px; line-height:37px; padding-left:30px; display:block; color:#2A78B4; vertical-align:middle; cursor:pointer; }
+		/**/
+		.up72_sidebar .up72_bline{ margin:6px; position:relative; }
+	
+	/*右内容*/
+	/*navBar [当前位置]*/
+	.up72_navbar{ padding:4px 8px 1px 5px; overflow:hidden; color:#333; height:22px; }
+		.up72_navbar .ico_bigdefault{ width:28px; height:24px; vertical-align:middle; _vertical-align:baseline; overflow:hidden; display:inline-block; }
+		.up72_navbar h2{ display:inline; font-size:14px }
+		.up72_navbar .navbar_back{ float:right; }
+		
+	.up72_content{ width:100%; overflow:hidden; }
+		.up72_iframe{ width:100%; min-height:600px; *height:600px; overflow-x:hidden; }
+
+/*up72_FFoottd [底部信息]*/
+.up72_dofooter{ height:45px; line-height:30px; min-width:980px; *width:980px; width:100%; margin:0 auto; position:absolute; }
+	.up72_dofooter .up72_dofnav{ height:30px; text-align:center; margin-top:15px; padding-right:8px; }
+		.up72_dofooter .up72_dofnav a{ display:inline; margin-left:10px; }
+	.up72_dofooter .up72_dofcopyright{ position:relative; height:45px; }

@@ -1,0 +1,92 @@
+﻿@charset "utf-8";
+/*
+Description:blue skin
+Version:2012-8-23
+Auther:qiang
+*/
+
+/* 外层皮肤 */
+html,body{ height:100%; height:100%\9; }
+body{ background:#d2e3be url('images/bg.png') left top; background-size:100%; }
+.up72_dowrap{ height:100%; }
+
+/* 页面头部 */
+.up72_dotop{ height:84px; box-shadow:0 1px 2px rgba(0,0,0,0.1); background:url('images/up72_dotop_bg.gif') left top repeat-x; }	
+.up72_dotop .up72_top{ height:84px; vertical-align:top; background:url('images/up72_top_bg.gif') left top no-repeat; }	
+.up72_dotop .up72_top .up72_tnav{ height:27px; color:#666; background:url('images/tnav_bg.png') left top repeat-x; width:98%; padding:0 1%; position:relative; z-index:110; }
+.up72_dotop .up72_top .up72_tnav a{ display:inline-block; }	
+
+	/* 系统配置 */
+	.up72_config{ width:40px; height:27px; float:left; position:relative; }
+	.up72_config .nav li a.top_link{ padding:0; display:block; text-align:center; cursor:pointer; }
+	.up72_config .nav li a.top_link span.down{ width:40px; height:27px; padding:0; display:block; overflow:hidden; vertical-align:middle; }
+	
+	/* 当前模块 */
+	.up72_curmod{ width:auto; height:27px; line-height:25px; float:left; font-family:'Microsoft YaHei'; position:relative; }
+	.up72_curmod .nav li a.top_link{ padding:0px; }
+	.up72_curmod .nav li span.up72_curmod_t{ display:block; height:32px; padding:0 15px; color:#fff; font-size:16px; }
+	
+	/* 用户信息 */
+	.up72_info, .up72_info a{ color:#666; }
+	.up72_info a:hover{ color:#366C00 }
+	.up72_info h4{ display:inline; padding-right:10px; font-size:12px; font-weight:normal; color:#888; }
+	.up72_info span.tnav_time{ display:inline-block; padding-left:35px; padding-right:8px; background:url('images/icon_time.gif') 18px center no-repeat; }
+	.up72_info a.tnav_config{ padding-right:8px; }
+	.up72_info a.tnav_exit{ padding-left:8px; }
+	.up72_info select{ padding:0px; border:none; }
+	
+	/* 系统logo */
+	.up72_logo a{ display:block; height:42px; background:url('images/logo.png') left top no-repeat; color:#85cb37; text-indent:-999em; font-size:20px; font-family:"Microsoft YaHei"; }
+	
+	/* 切换站点 */
+	.up72_switchSite {border:1px #FFC029 solid; border-top:0; background:#000; margin-left:8px; width:113px; border-radius:0 0 5px 5px;padding-bottom:3px; }
+	.up72_switchSite ul li{ width:113px; height:20px; border-bottom:1px #42391b solid; }
+	.up72_switchSite ul li a{ color:#FFC029; line-height:20px; padding-left:8px;text-decoration:none; width:113px; height:20px; display:inline-block; }
+	.up72_switchSite ul li:hover{ background:url('images/input_bg.gif') no-repeat; color:#fff; display:block; width:113px; height:20px; text-decoration:none; }
+	
+	/* 模块菜单 */
+	.up72_nav, .up72_nav ul, .up72_nav li,.up72_nav a{ margin:0; padding:0; border:none; outline:none; }
+	.up72_nav{ box-shadow:0 1px 3px rgba(0,0,0,0.1); }
+	.up72_nav li{ list-style:none; }
+	.up72_nav li > a{ display:block; position:relative; padding:0 10px 0 40px; height:32px; line-height:32px; font-weight:bold; color:#366c00; text-decoration:none; background:#d2e3be url('images/nav_link.png') repeat-x; border-bottom:solid 1px #b9d192; }
+	.up72_nav > ul > li:hover > a, .up72_nav > ul > li:target > a, .up72_nav > ul > li > a.active{ color:#fff; text-shadow:1px 1px 1px rgba(54,108,0, .2); background:#7aa027 url('images/nav_active.png') repeat-x; border-bottom:solid 1px #366c00; }
+	.up72_nav > ul > li > a > span.navIco{ width:16px; height:16px; display:inline-block; overflow:hidden; position:absolute; top:8px; left:14px; }
+	.up72_nav > ul > li > a > span.navIco img{ width:16px; height:16px; vertical-align:top; }
+	
+	.up72_nav li > a span.sup{ display:block; position:absolute; top:4px; right:0; padding:2px 0px 0; margin-right:10px; font:normal bold 12px/18px Arial, sans-serif; /*background:#9f3f0f; -webkit-border-radius:15px; -moz-border-radius:15px; border-radius:15px; -webkit-box-shadow:inset 1px 1px 1px rgba(0,0,0, .2), 1px 1px 1px rgba(255,255,255, .1); -moz-box-shadow:inset 1px 1px 1px rgba(0,0,0, .2), 1px 1px 1px rgba(255,255,255, .1); box-shadow:inset 1px 1px 1px rgba(0,0,0, .2), 1px 1px 1px rgba(255,255,255, .1);*/ background:url('../../icons/us_cursor.png') no-repeat; color:#fdfdfd; text-shadow:0px 1px 0px rgba(0,0,0, .35); width:19px; height:25px; text-align:center; }
+	.up72_nav > ul > li:hover > a span.sup,
+	.up72_nav > ul > li:target > a span.sup,
+	.up72_nav > ul > li > a.active span.sup{ color:#fdfdfd; text-shadow:0px 1px 0px rgba(0,0,0, .35); background:url('../../icons/us_cursor.png') no-repeat; }
+	/* - Sub Menu */
+	.up72_subNav li a{ color:#666; text-shadow:1px 1px 0px rgba(255,255,255, .2); background:#f1fae9; font-weight:normal; border-bottom:1px solid #e7f4d7; }
+	.up72_subNav li:hover a, .up72_subNav li a.hover{ background:#fff; color:#333; }
+	.up72_subNav li:hover a em, .up72_subNav li a.hover em{ color:#666 }
+	.up72_subNav li:last-child a{ border:none; }
+	.up72_subNav em{ position:absolute; top:0; left:0; margin-left:14px; color:#999; font:normal 10px/32px Arial, sans-serif; }
+	
+	.up72_subNav li > a span.sup{ color:#797979; text-shadow:1px 1px 0px rgba(255,255,255, .2); background:transparent; border:1px solid #c9c9c9; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; }
+	/* - Functionality */
+	.up72_nav li > .up72_subNav{ display:none; border-bottom:1px solid #b9d192; }
+	.up72_nav li:target > .up72_subNav{ display:block; }
+
+/* 主内容区 */
+.up72_domain{ height:100%; _position:relative; box-shadow:inside 2px 2px 5px 0 #06c; }
+.up72_mtable{ height:100%; vertical-align:top; }
+.up72_domain .up72_mleft{ width:180px; height:100%; padding-right:6px; }
+.up72_domain .up72_mleft .up72_domleft{ }
+.up72_domain .up72_mleft .up72_domleft .showHidden{ text-align:right; height:25px; line-height:25px; padding-bottom:4px; }
+.up72_domain .up72_mleft .up72_domleft .showHidden a{ color:#ccc; display:inline-block; width:30px; background:#eff6e7; text-align:center; font-size:16px; border-radius:3px; }
+.up72_domain .up72_mright_t{ background:url('images/mright_t.jpg') left top repeat; background-size:100% 41px; color:#2a78b4; padding-top:4px; height:37px; line-height:37px; font-size:16px; padding-left:15px; font-family:"Microsoft YaHei"; border-radius:5px 5px 0 0; border-bottom:solid 1px #bbb; }
+.up72_domain .up72_mright{ background:#fff url('images/mright_topbg.gif') left top repeat-x; border-top:solid 1px #fff; border-left:solid 1px #fff; box-shadow:0 2px 3px #ccc; min-height:600px; }
+.up72_domain .up72_mright .up72_domright{ width:100%; }
+
+	/* 当前位置 */
+	.up72_navBar h2 span{ color:#333 }
+	.up72_navBar h2 .subNav_name a{ color:#333; }
+	.up72_navBar h2 .current{ font-size:12px; }
+	.head_content{ display:none; }
+
+/* 底部信息 */
+.up72_dofooter{ height:50px; line-height:30px; }
+.up72_dofooter a{ color:#333; }
+.up72_dofooter .up72_dofcopyright{ color:#333; text-align:center; padding-left:156px; }

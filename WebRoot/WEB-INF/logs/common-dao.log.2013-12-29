@@ -1,0 +1,7 @@
+2013-12-29 17:22:19,454 [// -  - ] ERROR org.hibernate.util.JDBCExceptionReporter - Cannot create PoolableConnectionFactory (Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
+2013-12-29 17:22:19,486 [// -  - ] ERROR org.hibernate.util.JDBCExceptionReporter - Cannot create PoolableConnectionFactory (Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
+2013-12-29 18:12:01,963 [demo-loginUsername/0:0:0:0:0:0:0:1/8a70288a99ef42e6b728650fb39f9f43 -  - /admin/jtzs/event/] ERROR org.hibernate.util.JDBCExceptionReporter - Incorrect integer value: 'dqx' for column 'TITLE' at row 1

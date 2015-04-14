@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.ico-back {float: left; padding-right: 10px;}
+.ico-back {background-position: -32px -32px;height: 16px;width: 16px;}
+.ico-back {background-image: url("/scripts/filelist/bg.gif");background-repeat: no-repeat;}
+.gNetfolder-list .oprt { margin-left: 8px; position: absolute;  white-space: nowrap;}
+.ico { overflow: hidden;}
+.gNetfolder-list .ico-file { padding-right: 10px;float: left;}
+.ico-file {background-image: url("/scripts/filelist/file_ico.png"); background-position: 0 0; background-repeat: no-repeat;  height: 16px;    width: 16px;}
+.ico-file-undefined, .ico-file-1 {    background-position: 0 0;}
+.ico-file-xls, .ico-file-xlsx, .ico-file-2 {    background-position: -32px 0;}
+.ico-file-doc, .ico-file-docx, .ico-file-3 {    background-position: -64px 0;}
+.ico-file-ppt, .ico-file-pptx, .ico-file-4 {    background-position: -96px 0;}
+.ico-file-5 {    background-position: -128px 0;}
+.ico-file-rar, .ico-file-6 {    background-position: -160px 0;}
+.ico-file-zip, .ico-file-7 {    background-position: -192px 0;}
+.ico-file-8 {    background-position: -224px 0;}
+.ico-file-9 {    background-position: -256px 0;}
+.ico-file-html, .ico-file-10 {    background-position: -288px 0;}
+.ico-file-js, .ico-file-11 {    background-position: -320px 0;}
+.ico-file-xml, .ico-file-css, .ico-file-12 {    background-position: -352px 0;}
+.ico-file-13 {    background-position: -384px 0;}
+.ico-file-14 {    background-position: -416px 0;}
+.ico-file-15 {    background-position: -448px 0;}
+.ico-file-16 {    background-position: -480px 0;}
+.ico-file-pdf, .ico-file-17 {    background-position: -512px 0;}
+.ico-file-18 {    background-position: -544px 0;}
+.ico-file-19 {    background-position: -576px 0;}
+.ico-file-20 {    background-position: -608px 0;}
+.ico-file-21 {    background-position: -640px 0;}
+.ico-file-txt, .ico-file-22 {    background-position: -672px 0;}
+.ico-file-23 {    background-position: -704px 0;}
+.ico-file-24 {    background-position: -736px 0;}
+.ico-file-25 {    background-position: -768px 0;}
+.ico-file-26 {    background-position: -800px 0;}
+.ico-file-27 {    background-position: -832px 0;}
+.ico-file-28 {    background-position: -864px 0;}
+.ico-file-29 {    background-position: -896px 0;}
+.ico-file-30 {}
+.ico-file-jpg, .ico-file-31 {    background-position: 0 -32px;}
+.ico-file-gif, .ico-file-32 {    background-position: -32px -32px;}
+.ico-file-png, .ico-file-33 {    background-position: -64px -32px;}
+.ico-file-bmp, .ico-file-34 {    background-position: -96px -32px;}
+.ico-file-35 {    background-position: -128px -32px;}
+.ico-file-36 {    background-position: -160px -32px;}
+.ico-file-37 {    background-position: -192px -32px;}
+.ico-file-38 {    background-position: -224px -32px;}
+.ico-file-39 {    background-position: -256px -32px;}
+.ico-file-40 {    background-position: -288px -32px;}
+.ico-file-41 {    background-position: -320px -32px;}
+.ico-file-42 {    background-position: -352px -32px;}
+.ico-file-dir {    background-position: -384px -32px;}
+.disspan {display: none;}

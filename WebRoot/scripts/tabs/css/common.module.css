@@ -1,0 +1,20 @@
+@charset "utf-8";
+/*
+	<ul class="TabBarLevel1">
+		<li><a href="#">Man</a></li>
+		<li class="Selected"><a href="#">Woman</a></li>
+		<li><a href="#">Old</a></li>
+		<li><a href="#">Kid</a></li>
+	</ul>
+*/
+/* ********选项卡********* */
+.TabBar{
+width:400px;
+overflow:hidden;
+}
+ul.TabBarLevel1{ list-style:none; margin:0; padding:0; height:auto; min-height:29px; _height:29px; overflow:hidden; }
+ul.TabBarLevel1 li{ float:left; padding:0; height:29px; min-height:29px; _height:29px; margin-right:1px; background:url(../common/tabbar_level1_slice_left_bk.gif) left top no-repeat; }
+ul.TabBarLevel1 li a{ display:block; line-height:26px; padding:3px 20px 0px 20px; color:#333; background:url(../common/tabbar_level1_slice_right_bk.gif) right top no-repeat; white-space: nowrap; }
+ul.TabBarLevel1 li.Selected{ background:url(../common/tabbar_level1_slice_selected_left_bk.gif) left top no-repeat; }
+ul.TabBarLevel1 li.Selected a{ background:url(../common/tabbar_level1_slice_selected_right_bk.gif) right top no-repeat; }
+

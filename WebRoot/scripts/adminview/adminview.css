@@ -1,0 +1,22 @@
+.editor{
+	width:500px;
+	position:absolute;
+	background:#FFFFCC;
+	border:#333333 1px solid;
+	height:25px;
+	font-size:12px;
+	text-align:right;
+	z-index: 999999;
+}
+.editor .editor_header{
+	background:#999999;
+	height:10px;
+}
+.editor a{
+	margin-right:10px;
+	margin-left:10px;
+}
+
+.editor editor_border{
+	border: #F00 solid 1px;
+}
